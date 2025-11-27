@@ -1,5 +1,5 @@
 const bgBtn = document.getElementById("bgBtn");
-const bgColors = ["#ffff","#f9c74f", "#58aaf2", "#de6cf2"];
+const bgColors = ["#ffff","#7bbaf1ff","#eee094ff", "#f7a6e5ff"];
 
 bgBtn.addEventListener("click", () => {
     const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
