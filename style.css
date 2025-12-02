@@ -11,21 +11,6 @@
 
 .name-bio {
     font-size: 27px;
-    font-family: monospace;
-    border-right: 2px solid black;
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 4s steps(21) forwards, blink 1s infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 21ch; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
 }
 
 .avatar {
@@ -58,6 +43,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
 }
+
 
 
 
