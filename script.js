@@ -1,20 +1,20 @@
-const bgBtn = document.getElementById("bgBtn");
-const bgColors = ["#ffff","#7bbaf1ff","#eee094ff", "#f7a6e5ff"];
+const bgColors = ["#7bbaf1ff","#eee094ff", "#19ffcdff"];
+const txtColors = ["#ffffffff","#000000ff"];
+let bgColorIndex = null;
+let txtColorIndex = null;
 
-bgBtn.addEventListener("click", () => {
-    const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
-    document.body.style.backgroundColor = randomColor;
+document.getElementById("bgBtn").addEventListener("click", () => {
+    if(bgColorIndex == null || bgColorIndex == bgColors.length - 1) bgColorIndex = 0;
+    else bgColorIndex = bgColorIndex+1
+    const randomColor = bgColors[bgColorIndex]
+    document.body.style.background = randomColor;
 });
 
-const txtBtn = document.getElementById("txtBtn");
 
-txtBtn.addEventListener("click", () => {
-    document.body.style.color = "white";
+document.getElementById("txtBtn")?.addEventListener("click", () => {
+    if(txtColorIndex == null || txtColorIndex == txtColors.length - 1) txtColorIndex = 0;
+    else txtColorIndex = txtColorIndex+1
+    const randomColor = txtColors[txtColorIndex]
+    document.body.style.color = randomColor;
 });
 
-const resetBtn = document.getElementById("resetBtn");
-
-resetBtn.addEventListener("click", () => {
-    document.body.style.backgroundColor = "white"; 
-    document.body.style.color = "black";           
-});
