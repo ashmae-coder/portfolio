@@ -144,21 +144,17 @@ body {
   height: 40px;
 }
 
-
-/* Define the keyframes for the fade-in animation */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Start with full transparency */
-  }
+    opacity: 0; 
   to {
-    opacity: 1; /* End with full opacity */
+    opacity: 1; 
   }
 }
 
-/* Apply the animation to the element */
 .fade-in-element {
-  opacity: 0; /* Set initial opacity to 0 to prevent a flash of content */
-  animation: fadeIn 2s ease-in-out forwards; /* Apply the animation */
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out forwards; 
 }
 
 
